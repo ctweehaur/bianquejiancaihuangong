@@ -23,7 +23,12 @@ const quizQuestions = [
     },
     {
         id: 3,
-        textStructure: [{w: "关于", p: "guān yú"}, {w: "通假字", p: "tōng jiǎ zì"}, "“", {w: "还走", p: "xuán zǒu"}, "”", {w: "中的", p: "zhōng de"}, "“", {w: "还", p: "xuán"}, "”", {w: "字，", "下列含义"}, {w: "说明正确", p: "shuō míng zhèng què"}, {w: "的是", p: "de shì"}, "？"],
+        // 🎯【绝对精准重写】：彻底规避所有混乱的属性错位，确保 100% 正确运行
+        textStructure: [
+            {w: "关于", p: "guān yú"}, {w: "通假字", p: "tōng jiǎ zì"}, "“", {w: "还走", p: "xuán zǒu"}, "”", 
+            {w: "中的", p: "zhōng de"}, "“", {w: "还", p: "xuán"}, "”", {w: "字", p: "zì"}, "，", 
+            {w: "下列", p: "xià liè"}, {w: "说法", p: "shuō fǎ"}, {w: "正确", p: "zhèng què"}, {w: "的是", p: "de shì"}, "？"
+        ],
         en: "Which instruction about the loan character '还' (xuán) is correct?",
         options: [
             { textStructure: [{w: "读作", p: "dú zuò"}, " hái，", {w: "意思是", p: "yì si shì"}, {w: "还有", p: "hái yǒu"}], en: "Pronounced 'hái', meaning 'still'.", correct: false, explanationStructure: [{w: "错误", p: "cuò wù"}, "，", {w: "带入文句", p: "dài rù wén jù"}, {w: "语意完全", p: "yǔ yì wán quán"}, {w: "无法通顺", p: "wú fǎ tōng shùn"}, "。"], explanationEn: "Incorrect. This modern reading makes the classical sentence totally meaningless." },
@@ -48,9 +53,9 @@ const quizQuestions = [
         textStructure: [{w: "扁鹊", p: "biǎn què"}, {w: "最后", p: "zuì hòu"}, {w: "为什么要", p: "wèi shén me yào"}, {w: "逃往秦国", p: "táo wǎng qín guó"}, "？"],
         en: "Why did Bian Que eventually flee to the State of Qin?",
         options: [
-            { textStructure: [{w: "因为", p: "yīn wèi"}, {w: "秦国给他的", p: "qín guó gěi tā de"}, {w: "薪水和福利", p: "xīn shuǐ hé fú lì"}, {w: "更高", p: "gèng gāo"}], en: "Because Qin offered him a higher salary and benefits.", correct: false, explanationStructure: [{w: "错误", p: "cuò wù"}, "，", {w: "他逃跑是", p: "táo pǎo shì"}, {w: "为了保命", p: "wèi le bǎo mìng"}, "，", {w: "不是为了", p: "bú ... i wèi le"}, {w: "跳槽赚钱", p: "tiào cáo zhuàn qián"}, "。"], explanationEn: "Incorrect. He fled to save his life, not for a better paying job." },
+            { textStructure: [{w: "因为", p: "yīn wèi"}, {w: "秦国给他的", p: "qín guó gěi tā de"}, {w: "薪水和福利", p: "xīn shuǐ hé fú lì"}, {w: "更高", p: "gèng gāo"}], en: "Because Qin offered him a higher salary and benefits.", correct: false, explanationStructure: [{w: "错误", p: "cuò wù"}, "，", {w: "他逃跑是", p: "táo pǎo shì"}, {w: "为了保命", p: "wèi le bǎo mìng"}, "，", {w: "不是为了", p: "bú shì wèi le"}, {w: "跳槽赚钱", p: "tiào cáo zhuàn qián"}, "。"], explanationEn: "Incorrect. He fled to save his life, not for a better paying job." },
             { textStructure: [{w: "因为", p: "yīn wèi"}, {w: "桓公病入骨髓", p: "huán gōng bìng rù gǔ suǐ"}, "，", {w: "无药可救", p: "wú yào kě jiù"}, "，", {w: "留下来", p: "liú xià lái"}, {w: "会被治罪处死", p: "huì bèi zhì zuì chǔ sǐ"}], en: "Because the Duke was dying, and staying meant execution.", correct: true, explanationStructure: [{w: "正确", p: "zhèng què"}, "，", {w: "古代伴君如伴虎", p: "gǔ dài bàn jūn rú bàn hǔ"}, "，", {w: "国君死后", p: "guó jūn sǐ hòu"}, {w: "太医往往", p: "tài yī wǎng wǎng"}, {w: "会被无辜", p: "huì bèi wú gū"}, {w: "陪葬或杀头", p: "péi zàng huò shā tóu"}, "。"], explanationEn: "Correct. The Duke's disease was past cure. If Bian Que stayed, the royal family would execute him for failing to save the ruler." },
-            { textStructure: [{w: "开玩笑", p: "kāi wán xiào"}, "，", {w: "当时的形势", p: "dāng shí de xíng shì"}, {w: "极其危急", p: "jí qí wēi jí"}], en: "Because he wanted to take a holiday in Qin.", correct: false, explanationStructure: [{w: "开玩笑", p: "kāi wán xiào"}, "备份", {w: "极其危急", p: "jí qí wēi jí"}], explanationEn: "Incorrect. The situation was dangerous; he was escaping, not traveling for fun." },
+            { textStructure: [{w: "因为", p: "yīn wèi"}, {w: "形势危急", p: "xíng shì wēi jí"}], en: "Because he wanted to take a holiday in Qin.", correct: false, explanationStructure: [{w: "错误", p: "cuò wù"}, "，", {w: "形势极其危急", p: "xíng shì jí qí wēi jí"}], explanationEn: "Incorrect. The situation was dangerous; he was escaping, not traveling for fun." },
             { textStructure: [{w: "因为", p: "yīn wèi"}, {w: "蔡桓公", p: "cài huán gōng"}, {w: "写信", p: "xiě xìn"}, {w: "驱逐他", p: "qū zhú tā"}, {w: "出境", p: "chū jìng"}], en: "Because Duke Huan wrote a letter to banish him.", correct: false, explanationStructure: [{w: "内容不符", p: "nèi róng bù fú"}, "，", {w: "桓公最后", p: "huán gōng zuì hòu"}, {w: "还在派人", p: "hái zài pài rén"}, {w: "求他治病", p: "qiú tā zhì bìng"}, "。"], explanationEn: "Incorrect. The Duke was actually searching for him to beg for treatment at the end." }
         ]
     }
