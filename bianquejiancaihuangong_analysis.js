@@ -6,7 +6,7 @@ const analysisData = [
         textZh: "《扁鹊见蔡桓公》是一篇经典的叙事寓言。文章通过病情的层层恶化（腠理—肌肤—肠胃—骨髓），极具逻辑性地展现了危机从小到大、最终无可挽回的过程。蔡桓公的悲剧不在于他得病，而在于他的傲慢、固执以及“讳疾忌医”的心理——总觉得别人指出他的缺点是别有用心。这篇故事告诉大马中学生们一个深刻的人生哲理：无论是身体健康、个人学业还是社会工作，面对问题都要“防微杜渐”，在苗头刚出现时积极改正，如果一味掩盖，终将付出无法承受的代价。",
         textPy: "biǎn què jiàn cài huán gōng shì yī piàn jīng diǎn de xù shì yù yán píng qíng cóng còu lǐ jī fū cháng wèi dào gǔ suǐ bǎ wēi jī cóng xiǎo dào dà bèi zhǎn lù wú yí cài huán gōng de bēi jù zài yú hóng màng gù zhí huì jí jì yī fáng wēi dù jiàn shì zhè piān gù shì jǐ dào wǒ mén de qǐ shì",
         textEn: "This narrative logically details how a tiny problem grows into a fatal disaster. Duke Huan's tragedy was caused by his arrogance and refusal to listen to professional advice. The story teaches students that whether it is our health, our studies, or daily problems, we must fix mistakes early before they become impossible to solve."
-    }
+    },
     {
         header: "一字千金：文言多音通假字的高校聚焦",
         headerPy: "yī zì qiān jīn wén yán duō yīn tōng jiǎ zì de gāo xiào jù jiáo",
