@@ -2,7 +2,7 @@ const translationData = [
     {
         zhStructure: [
             {w: "扁鹊", p: "biǎn què"}, {w: "前来拜见", p: "qián lái bài jiàn"}, {w: "蔡桓公", p: "cài huán gōng"}, "，",
-            {w: "在旁边站了一会儿", p: "zài páng biān zhàn le yí huì r"}, "。官方",
+            {w: "在旁边站了一会儿", p: "zài páng biān zhàn le yí huì r"}, "。",
             {w: "扁鹊说", p: "biǎn què shuō"}, "：“", {w: "您的", p: "nín de"}, {w: "小病", p: "xiǎo bìng"},
             {w: "在皮肤纹理间", p: "zài pí fū wén lǐ jiān"}, "，", {w: "如果不及时医治", p: "bù rú guǒ jí shí yī zhì"}, "，",
             {w: "恐怕会", p: "kǒng pà huì"}, {w: "往深处发展", p: "wǎng shēn chù fā zhǎn"}, "。”",
